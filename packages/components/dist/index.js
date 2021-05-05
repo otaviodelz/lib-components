@@ -76,7 +76,7 @@ const ProductCard = ({
   }, productName), /*#__PURE__*/React__default['default'].createElement(natdsWeb.Typography, {
     align: "center",
     className: styles.price
-  }, "R$ ", price), /*#__PURE__*/React__default['default'].createElement(Button, {
+  }, "R$ ", price), /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, {
     color: "primary",
     variant: "contained",
     className: styles.button
