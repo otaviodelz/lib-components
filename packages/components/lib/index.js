@@ -13,7 +13,7 @@ const Button = ({
   label,
   ...rest
 }) => {
-  return /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, rest, label);
+  return /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, rest, label, " test");
 };
 
 exports.Button = Button;
