@@ -15,8 +15,9 @@ export default {
     },
   ],
   plugins: [
-    peerDepsExternal(),
-    resolve(),
+    resolve({
+      preferBuiltins: true,
+    }),
     babel({
       exclude: 'node_modules/**',
       babelHelpers: 'bundled',
@@ -25,11 +26,10 @@ export default {
       include: 'node_modules/**',
     }),
     postcss({
-      extensions: ['css'],
-      modules: {
-        scopeBehaviour: 'global',
-      },
+      extensions: ['.css'],
+      modules: true,
       sourceMap: true,
     }),
+    peerDepsExternal(),
   ],
 };
