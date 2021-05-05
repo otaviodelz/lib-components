@@ -40,9 +40,9 @@
     "rollup-plugin-postcss": "^4.0.0"
   },
   "peerDependencies": {
+    "@naturacosmeticos/natds-web": "^1.5.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "@naturacosmeticos/natds-web": "^1.5.6"
+    "react-dom": "^17.0.2"
   },
   "dependencies": {
     "@naturacosmeticos/natds-web": "^1.5.6"
