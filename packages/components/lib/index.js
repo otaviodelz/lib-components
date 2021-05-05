@@ -56,7 +56,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".styles_test__3Q8qR {\n  padding: 30px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0FBQ2YiLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXN0IHtcbiAgcGFkZGluZzogMzBweDtcbn1cbiJdfQ== */";
+var css_248z = ".styles_test__3Q8qR {\n  color: red;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxVQUFVO0FBQ1oiLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50ZXN0IHtcbiAgY29sb3I6IHJlZDtcbn1cbiJdfQ== */";
 var styles = {"test":"styles_test__3Q8qR"};
 styleInject(css_248z);
 
@@ -69,10 +69,10 @@ const Button = ({
   }, rest), label, " test");
 };
 
-Object.defineProperty(exports, 'Provier', {
+Object.defineProperty(exports, 'Provider', {
   enumerable: true,
   get: function () {
-    return natdsWeb.Provier;
+    return natdsWeb.Provider;
   }
 });
 Object.defineProperty(exports, 'themes', {
