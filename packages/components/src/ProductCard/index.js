@@ -4,6 +4,7 @@ import {
   CardContent,
   Tag,
   Typography,
+  Button,
 } from '@naturacosmeticos/natds-web';
 import useStyles from './ProductCard.styles';
 
