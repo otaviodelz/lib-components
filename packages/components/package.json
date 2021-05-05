@@ -1,11 +1,11 @@
 {
-  "name": "components",
+  "name": "@lib-components/components",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Otávio Zirpoli <otavio_delz@hotmail.com>",
   "homepage": "https://github.com/otaviodelz/lib-components#readme",
   "license": "ISC",
-  "main": "lib/components.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -18,9 +18,33 @@
     "url": "git+https://github.com/otaviodelz/lib-components.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "watch": "rollup -cw",
+    "build": "rm -rf lib && rollup -c"
   },
   "bugs": {
     "url": "https://github.com/otaviodelz/lib-components/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.47.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@naturacosmeticos/natds-web": "^1.5.6"
+  },
+  "dependencies": {
+    "@naturacosmeticos/natds-web": "^1.5.6"
   }
 }
