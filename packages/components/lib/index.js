@@ -64,11 +64,9 @@ const Button = ({
   label,
   ...rest
 }) => {
-  return /*#__PURE__*/React__default['default'].createElement(natdsWeb.Provider, {
-    theme: natdsWeb.themes.natura.light
-  }, /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, _extends({
+  return /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, _extends({
     className: styles.test
-  }, rest), label, " test"));
+  }, rest), label, " test");
 };
 
 Object.defineProperty(exports, 'Provider', {
