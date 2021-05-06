@@ -127,7 +127,9 @@ const Counter = () => {
   const [increment, setIncrement] = React.useState(0);
   return /*#__PURE__*/React__default['default'].createElement("div", null, /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, {
     onClick: () => setIncrement(prev => prev++)
-  }, "Click"), /*#__PURE__*/React__default['default'].createElement(natdsWeb.Chip, null, increment));
+  }, "Click"), /*#__PURE__*/React__default['default'].createElement(natdsWeb.Chip, {
+    label: increment
+  }));
 };
 
 Object.defineProperty(exports, 'Provider', {
@@ -143,6 +145,6 @@ Object.defineProperty(exports, 'themes', {
   }
 });
 exports.Block = Block;
-exports.Chip = Counter;
+exports.Counter = Counter;
 exports.ProductCard = ProductCard;
 //# sourceMappingURL=index.js.map
