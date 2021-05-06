@@ -123,6 +123,13 @@ const Block = () => {
   });
 };
 
+const Counter = () => {
+  const [increment, setIncrement] = React.useState(0);
+  return /*#__PURE__*/React__default['default'].createElement("div", null, /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, {
+    onClick: () => setIncrement(prev => prev++)
+  }, "Click"), /*#__PURE__*/React__default['default'].createElement(natdsWeb.Chip, null, increment));
+};
+
 Object.defineProperty(exports, 'Provider', {
   enumerable: true,
   get: function () {
@@ -136,5 +143,6 @@ Object.defineProperty(exports, 'themes', {
   }
 });
 exports.Block = Block;
+exports.Chip = Counter;
 exports.ProductCard = ProductCard;
 //# sourceMappingURL=index.js.map
