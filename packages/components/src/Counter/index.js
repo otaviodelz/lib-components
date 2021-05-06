@@ -7,7 +7,7 @@ const Counter = () => {
   return (
     <div>
       <Button onClick={() => setIncrement((prev) => prev++)}>Click</Button>
-      <Chip>{increment}</Chip>
+      <Chip label={increment} />
     </div>
   );
 };
