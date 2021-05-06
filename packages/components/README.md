@@ -1,11 +1,4 @@
 # `components`
 
-> TODO: description
+> Test..
 
-## Usage
-
-```
-const components = require('components');
-
-// TODO: DEMONSTRATE API
-```
