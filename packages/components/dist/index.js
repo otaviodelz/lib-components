@@ -126,7 +126,7 @@ const Block = () => {
 const Counter = () => {
   const [increment, setIncrement] = React.useState(0);
   return /*#__PURE__*/React__default['default'].createElement("div", null, /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, {
-    onClick: () => setIncrement(prev => prev++)
+    onClick: () => setIncrement(prev => ++prev)
   }, "Click"), /*#__PURE__*/React__default['default'].createElement(natdsWeb.Chip, {
     label: increment
   }));
