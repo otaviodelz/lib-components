@@ -4,7 +4,15 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build": "lerna run build",
+    "lint": "lerna run lint",
+    "test": "lerna run test"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "resolutions": {
+    "postcss": "^8.1.0"
   }
 }

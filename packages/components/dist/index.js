@@ -77,10 +77,50 @@ const ProductCard = ({
     align: "center",
     className: styles.price
   }, "R$ ", price), /*#__PURE__*/React__default['default'].createElement(natdsWeb.Button, {
+    "data-testid": "productCard-btn",
     color: "primary",
     variant: "contained",
     className: styles.button
   }, "COMPRAR"))));
+};
+
+function styleInject(css, ref) {
+  if (ref === void 0) ref = {};
+  var insertAt = ref.insertAt;
+
+  if (!css || typeof document === 'undefined') {
+    return;
+  }
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+  var style = document.createElement('style');
+  style.type = 'text/css';
+
+  if (insertAt === 'top') {
+    if (head.firstChild) {
+      head.insertBefore(style, head.firstChild);
+    } else {
+      head.appendChild(style);
+    }
+  } else {
+    head.appendChild(style);
+  }
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var css_248z = ".styles_container__3RJB9 {\n  width: 250px;\n  height: 250px;\n  background-color: red;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFZO0VBQ1osYUFBYTtFQUNiLHFCQUFxQjtBQUN2QiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XG4gIHdpZHRoOiAyNTBweDtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmVkO1xufSJdfQ== */";
+var styles = {"container":"styles_container__3RJB9"};
+styleInject(css_248z);
+
+const Block = () => {
+  return /*#__PURE__*/React__default['default'].createElement("div", {
+    className: styles.container
+  });
 };
 
 Object.defineProperty(exports, 'Provider', {
@@ -95,5 +135,6 @@ Object.defineProperty(exports, 'themes', {
     return natdsWeb.themes;
   }
 });
+exports.Block = Block;
 exports.ProductCard = ProductCard;
 //# sourceMappingURL=index.js.map

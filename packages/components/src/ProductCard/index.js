@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
   Card,
   CardContent,
   Tag,
   Typography,
   Button,
-} from '@naturacosmeticos/natds-web';
-import useStyles from './ProductCard.styles';
+} from "@naturacosmeticos/natds-web";
+import useStyles from "./ProductCard.styles";
 
 const ProductCard = ({ stamp, brand, productName, price }) => {
   const styles = useStyles();
@@ -31,7 +31,12 @@ const ProductCard = ({ stamp, brand, productName, price }) => {
           <Typography align="center" className={styles.price}>
             R$ {price}
           </Typography>
-          <Button color="primary" variant="contained" className={styles.button}>
+          <Button
+            data-testid="productCard-btn"
+            color="primary"
+            variant="contained"
+            className={styles.button}
+          >
             COMPRAR
           </Button>
         </div>
