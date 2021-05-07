@@ -1,9 +1,8 @@
 {
-  "name": "@lib-components/components",
-  "version": "1.0.17",
-  "private": false,
+  "name": "@lib-components/commons",
+  "version": "1.0.0",
   "description": "> TODO: description",
-  "author": "Otávio Zirpoli <otavio_delz@hotmail.com>",
+  "author": "Otavio Zirpoli <otavio.zirpoli@compasso.com.br>",
   "homepage": "https://github.com/otaviodelz/lib-components#readme",
   "license": "ISC",
   "main": "dist/index.js",
@@ -19,9 +18,7 @@
     "url": "git+https://github.com/otaviodelz/lib-components.git"
   },
   "scripts": {
-    "lint": "eslint --ext .js,.jsx, ./src --quiet --color",
-    "test": "jest",
-    "watch": "rollup -cw",
+    "test": "echo Teste...",
     "build": "rm -rf dist && rollup -c"
   },
   "bugs": {
@@ -33,16 +30,10 @@
   },
   "peerDependencies": {
     "@naturacosmeticos/natds-web": "^1.5.6",
-    "@lib-components/commons": "1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@naturacosmeticos/natds-web": "^1.5.6",
-    "@lib-components/commons": "1.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "b587d4711eb1344f26e9dbdbe61ded0abd51eebd"
+    "@naturacosmeticos/natds-web": "^1.5.6"
+  }
 }
