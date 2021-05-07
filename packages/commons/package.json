@@ -1,6 +1,7 @@
 {
   "name": "@lib-components/commons",
   "version": "1.0.18",
+  "private": true,
   "description": "> TODO: description",
   "author": "Otavio Zirpoli <otavio.zirpoli@compasso.com.br>",
   "homepage": "https://github.com/otaviodelz/lib-components#readme",
@@ -35,5 +36,6 @@
   },
   "dependencies": {
     "@naturacosmeticos/natds-web": "^1.5.6"
-  }
+  },
+  "gitHead": "bf64fb1f4b873c0e5f28d6548613d51f4c2c9eae"
 }
