@@ -132,6 +132,18 @@ const Counter = () => {
   }));
 };
 
+const ContentBrandProductsBlock = ({
+  title,
+  styles,
+  children
+}) => {
+  return /*#__PURE__*/React__default['default'].createElement(natdsWeb.Container, {
+    className: styles['brand-products__container']
+  }, /*#__PURE__*/React__default['default'].createElement(natdsWeb.Typography, {
+    className: styles['brand-products__title']
+  }, title), children);
+};
+
 Object.defineProperty(exports, 'Provider', {
   enumerable: true,
   get: function () {
@@ -145,6 +157,7 @@ Object.defineProperty(exports, 'themes', {
   }
 });
 exports.Block = Block;
+exports.ContentBrandProductsBlock = ContentBrandProductsBlock;
 exports.Counter = Counter;
 exports.ProductCard = ProductCard;
 //# sourceMappingURL=index.js.map
