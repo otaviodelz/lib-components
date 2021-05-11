@@ -132,6 +132,44 @@ const Counter = () => {
   }));
 };
 
+const getImages = (src, staticSrc) => src ? staticSrc + src : null;
+
+const LibContext = /*#__PURE__*/React__default['default'].createContext();
+
+const useLibContext = () => {
+  const context = React.useContext(LibContext);
+  if (!context) console.log('Context not defined');
+  return context;
+};
+
+const ContentBrandProductsBlock = ({
+  title,
+  styles,
+  brandImage,
+  brand,
+  children
+}) => {
+  const config = useLibContext();
+  console.log(config);
+  return /*#__PURE__*/React__default['default'].createElement(natdsWeb.Container, {
+    className: styles['brand-products__container']
+  }, /*#__PURE__*/React__default['default'].createElement(natdsWeb.Typography, {
+    className: styles['brand-products__title']
+  }, title, brandImage && /*#__PURE__*/React__default['default'].createElement("img", {
+    "data-testid": "brand-products__img",
+    src: getImages(brandImage, config.STATIC_IMAGES),
+    alt: brand,
+    className: styles['brand-products__img']
+  })), children);
+};
+
+const LibProvider = ({
+  children,
+  config
+}) => /*#__PURE__*/React__default['default'].createElement(LibContext.Provider, {
+  value: config
+}, children);
+
 Object.defineProperty(exports, 'Provider', {
   enumerable: true,
   get: function () {
@@ -145,6 +183,8 @@ Object.defineProperty(exports, 'themes', {
   }
 });
 exports.Block = Block;
+exports.ContentBrandProductsBlock = ContentBrandProductsBlock;
 exports.Counter = Counter;
+exports.LibProvider = LibProvider;
 exports.ProductCard = ProductCard;
 //# sourceMappingURL=index.js.map
